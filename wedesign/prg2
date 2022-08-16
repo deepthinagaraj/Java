@@ -1,0 +1,81 @@
+// Java Program to illustrate constructor overloading
+// using same task (addition operation ) for different
+// types of arguments.
+ 
+import java.io.*;
+ 
+class MyOverloadingClass
+{
+    // constructor 1 
+	public String message;
+	public String ArrayList[];
+	public int [] lowerlimit,  upperlimit;
+    public String ticket;
+
+    String[] arr = { "Apple", "Banana", "Orange" };
+
+    MyOverloadingClass(String message, String ArrayList,String ticket, int lowerlimit,  upperlimit){  
+        this.message = message;  
+        this.ArrayLis = collegeName;  
+        this.passoutYear = passoutYear;  
+        }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        System.out.println("Constructor with one " +
+                      "is deeps " + message);
+    }
+ 
+    // constructor with two arguments
+    public(int lowerlimit, int upperlimit)
+    {
+ 
+        System.out.println("Constructor with two arguments : " +
+                " String and Integer : " + lowerlimit + " "+  " ");
+ 
+    }
+ 
+    // Constructor with one argument but with different
+    // type than previous..
+    Geek(long id)
+    {
+        System.out.println("Constructor with one argument : " +
+                                            "Long : " + id);
+    }
+}
+ 
+class GFG
+{
+    public static void main(String[] args)
+    {
+        // Creating the objects of the class named 'Geek'
+        // by passing different arguments
+ 
+        // Invoke the constructor with one argument of
+        // type 'String'.
+        Geek geek2 = new Geek("Shikhar");
+ 
+        // Invoke the constructor with two arguments
+        Geek geek3 = new Geek("Dharmesh", 26);
+ 
+        // Invoke the constructor with one argument of
+        // type 'Long'.
+        Geek geek4 = new Geek(325614567);
+    }
+}
